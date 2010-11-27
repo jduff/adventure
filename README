@@ -1,0 +1,14 @@
+TODO
+* initialize creatures and items with different properties
+* dsl for creatures and properties
+* callbacks when actions are invoked on a creature or property
+* attacking shouldn't kill right away
+* creatures should strike back
+* tests for commands
+* better cli
+* better handling of built in commands, creatures and items
+* better docs
+* better api from commands
+* drop command
+* use command
+* execute code in sandbox

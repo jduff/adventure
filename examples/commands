@@ -1,0 +1,22 @@
+# built in game commands
+command "take" do
+  ask "What would you like to take?"
+  description "You can take any items that are around you, as long as there's no creatures. ex 'take knife'"
+
+  evaluator Commands::TakeCommandEvaluator.new
+end
+
+command "attack" do
+  ask "What would you like to attack?"
+  description "You can attack any creatures that are around you. ex 'attack goblin'"
+
+  evaluator Commands::AttackCommandEvaluator.new
+end
+
+command "look" do
+  ask "Where would you like to look?"
+  description "You can look in different directions (north, south, east, west) or around. ex 'look around' or 'look north'"
+
+  evaluator Commands::LookCommandEvaluator.new
+end
+

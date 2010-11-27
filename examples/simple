@@ -1,0 +1,19 @@
+# world dsl
+place "The Forest" do
+  description "Gloomy Forest"
+  creature :goblin
+
+  item :knife
+
+
+  north :"Open Road"
+
+  player :here
+end
+
+place "Open Road" do
+  desc "Open Road"
+
+  creature :goblin
+end
+

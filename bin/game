@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+$: << File.join(File.dirname(__FILE__), "/../lib")
+
+require 'adventure'
+
+game = Adventure::Game.build( File.read( File.expand_path('../../examples/simple', __FILE__) ) )
+puts game.start
+
+while(!@exit && (input = gets.chomp))
+  @exit = true && break if input == "exit"
+  puts "\n"
+  puts game.play(input)
+end
+
+puts "Thanks for playing!"
